@@ -16,23 +16,20 @@ function adicionarAmigo() {
     nomes.push(amigos);
   }
   console.log(nomes);
+  listaAmigos();
   limparCampo();
 }
 
 function listaAmigos() {
-    let lista = document.querySelector('ul');
-    lista.innerHTML = '';
+    let ul = document.getElementById('listaAmigos');
+    ul.innerHTML = '';
 
     for(let nome of nomes) {
     let li = document.createElement('li');
     li.textContent =  nome;
-    lista.appendChild(li);
+    ul.appendChild(li);
     }
-
 }
-
-
-
 
 function limparCampo() {
     input = document.querySelector('input');
