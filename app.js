@@ -11,14 +11,27 @@ function adicionarAmigo() {
   let amigos = input.value;
 
   if (amigos == "") {
-    exibirTexto('h2', 'Adicione um nome válido');
+    alert('Por favor, adicione um nome válido');
   }else {
     nomes.push(amigos);
   }
-  
   console.log(nomes);
   limparCampo();
 }
+
+function listaAmigos() {
+    let lista = document.querySelector('ul');
+    lista.innerHTML = '';
+
+    for(let nome of nomes) {
+    let li = document.createElement('li');
+    li.textContent =  nome;
+    lista.appendChild(li);
+    }
+
+}
+
+
 
 
 function limparCampo() {
