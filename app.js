@@ -15,7 +15,6 @@ function adicionarAmigo() {
   }else {
     nomes.push(amigos);
   }
-  console.log(nomes);
   listaAmigos();
   limparCampo();
 }
@@ -31,7 +30,26 @@ function listaAmigos() {
     }
 }
 
+function sortearAmigo() {
+    let ul = document.getElementById('resultado');
+    ul.innerHTML = '';
+
+    if(nomes.length == 0) {
+        alert ('Adicione nomes para sortear');
+        return;
+    }
+
+    let indiceAleatorio = Math.floor(Math.random() * nomes.length);
+    let nomeAleatorio = nomes[indiceAleatorio];
+
+    let li = document.createElement('li');
+    li.textContent = nomeAleatorio;
+    ul.appendChild(li);
+
+    document.getElementById('listaAmigos').innerHTML = '';
+}
+
 function limparCampo() {
-    input = document.querySelector('input');
-    input.value = " ";
+    let input = document.querySelector('input');
+    input.value = "";
 }
