@@ -25,3 +25,9 @@ Este projeto faz parte da trilha de **Iniciante em programação** da Formação
 Neylane — Estudante de Análise e Desenvolvimento de Sistemas  
 🔗 https://www.linkedin.com/in/neylane-vasconcelos/ 
 📫 Email: lanevasconcellos1@gmail.com
+
+## 🔗 Acesse o projeto
+
+Você pode visualizar o projeto online clicando neste link:  
+👉 [Ver no GitHub Pages](https://lane15vasconcelos.github.io/amigo-secreto/)
+
